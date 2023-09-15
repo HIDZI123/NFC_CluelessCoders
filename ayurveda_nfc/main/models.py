@@ -21,11 +21,12 @@ class Drug(models.Model):
 
 class Disease(models.Model):
     name = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
     symptoms = models.TextField()
     causes = models.TextField()
     prevention = models.TextField()
     remedies=models.TextField()
-    drug=models.ForeignKey('Drug',on_delete=models.CASCADE)
+    drug=models.ForeignKey('Drug',on_delete=models.CASCADE,blank=True)
     clinic = models.URLField(max_length=200,blank=True)
 
     def __str__(self):

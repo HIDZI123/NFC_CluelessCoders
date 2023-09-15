@@ -5,21 +5,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disease</title>
+    <title>sample</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'main/styl.css'%}">
 </head>
 <body>
+    <header class="disease_name">
+        <h1>{{disease.name}}</h1>
+    </header>
+    <div class="card">
+    <article class="article1">
+        <section class="section1">
+        <div class="symtoms">
+            <h2>Symptoms:</h2>
+            <ul>
+                {% for symptom in disease.formatted_symptoms %}
+                    <li>{{ symptom }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        </section>
+    <section class="section2">
+        <div class="causes">
+            <h2>Types and Causes:</h2>
+            <ul>
+                {% for cause in disease.formatted_causes %}
+                    <li>{{ cause }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    <!-- <section class="section3">
+        <div class="types">
+            <h2>Types</h2>
+            <p>heloo</p>
+        </div>
+    </section> -->
+</article>
 
-    <h1>{{disease.name}}</h1>
-    <h3>{{disease.description}}</h3>
-    <h2>{{disease.drug}}<br></h2>
-    {{disease.drug.description}}<br>
-    <h2>{{disease.ayurveda}}<br></h2>
-    {{disease.ayurveda.description}}<br>
-    <h1>{{diseases.name}}</h1>    <br>
-
-    
-    <a href="{%url 'home'%}">Home</a>
-    
-
+<article class="article2">
+    <section class="section4">
+    <div class="precaution">
+        <h2>Prevention:</h2>
+        <ul>
+            {% for prevention in disease.formatted_prevention %}
+                <li>{{ prevention }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    </section>
+<section class="section5">
+    <div class="ayurved">
+        <h2>Remedies:</h2>
+        <ul>
+            {% for remedy in disease.formatted_remedies %}
+                <li>{{ remedy }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+</article>
+</div>
 </body>
 </html>

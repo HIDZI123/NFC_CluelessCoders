@@ -4,48 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sample</title>
-    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="{%static 'main/styl.png'%}">
 </head>
 <body>
     <header class="disease_name">
-        <h1>Disease1</h1>
+        <h1>{{disease.name}}</h1>
     </header>
 
     <article class="article1">
         <section class="section1">
         <div class="symtoms">
-           <h2>symtoms</h2> 
-           <p>hello</p>
+            <h2>Symptoms:</h2>
+            <ul>
+                {% for symptom in disease.formatted_symptoms %}
+                    <li>{{ symptom }}</li>
+                {% endfor %}
+            </ul>
         </div>
         </section>
     <section class="section2">
         <div class="causes">
-            <h2>causes</h2> 
-            <p>hell</p>
+            <h2>Types and Causes:</h2>
+            <ul>
+                {% for cause in disease.formatted_causes %}
+                    <li>{{ cause }}</li>
+                {% endfor %}
+            </ul>
         </div>
     </section>
-    <section class="section3">
+    <!-- <section class="section3">
         <div class="types">
             <h2>Types</h2>
             <p>heloo</p>
         </div>
-    </section>
+    </section> -->
 </article>
 
 <article class="article2">
     <section class="section4">
     <div class="precaution">
-       <h2>precaution</h2> 
-       <p>hello</p>
+        <h2>Prevention:</h2>
+        <ul>
+            {% for prevention in disease.formatted_prevention %}
+                <li>{{ prevention }}</li>
+            {% endfor %}
+        </ul>
     </div>
     </section>
 <section class="section5">
     <div class="ayurved">
-        <h2>Ayurvedic remidies</h2> 
-        <p>hell</p>
+        <h2>Remedies:</h2>
+        <ul>
+            {% for remedy in disease.formatted_remedies %}
+                <li>{{ remedy }}</li>
+            {% endfor %}
+        </ul>
     </div>
 </section>
 </article>
+<p><strong>Related Drug:</strong> {{ disease.drug.name }}</p>
 <div class="link"><h2>links</h2>
     <p><a href="https://www.youtube.com/">youtube</a></p>
 

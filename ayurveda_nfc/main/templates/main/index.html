@@ -5,17 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="{%static 'main/style.css'%}">
     <title>ayurveda</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="{%static 'main/icon.png'%}">
 </head>
 
 <body>
     <header class="header"> 
         
         <h1  class="header__h1">
-            <img src="images/ayurveda.png" class="ayu-item">
+            <img src="{%static 'main/ayurveda.png'%}" class="ayu-item">
         AYURVEDA
         </h1>
   <!-- nav bar -->
@@ -61,12 +60,6 @@
         Body parts
         </h2>
         <ul>
-            {%for bodypart in parts%}
-
-            <li class="li2">
-                <a href="{% url 'body_part' bodypart.id %}" class="a__2"> {{bodypart.name}}
-                </a>
-            </li>
             <li class="li2">
                 <a href="" class="a__2">Nose</a>
             </li>

@@ -22,11 +22,10 @@ def disease_search(request):
 
 def disease(request,disease_id):
     disease=Disease.objects.get(id=disease_id)
-    part=disease.part.all()
 
 
     return render(request,"main/disease.html",
-    {"disease":disease,"parts":part})
+    {"disease":disease})
 
 
 def bodypart(request,part_id):
