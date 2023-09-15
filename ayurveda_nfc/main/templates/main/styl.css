@@ -1,32 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
-*,*::after,*::before
-{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html
-{
-    font-family: "Poppins",sans-serif;
-    scroll-behavior: smooth;
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
-body
-{
-    background-image: url("images/Bg_img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: #464646;
-    backface-visibility: 70%;
-    z-index: 1;
+
+body {
+  background-image: url("images/Bg_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #464646;
+  backface-visibility: 70%;
+  z-index: 1;
 }
-.disease_name{
+.card {
+  width: 100%;
+  border: 100px solid #000000;
+  background-color: #12ebe000;
+  z-index: 1;
+}
+.disease_name {
   text-align: center;
   padding: 1rem;
   margin-bottom: 0rem;
 }
-.article1{
+
+.article1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -35,7 +44,8 @@ body
   width: 100%;
   margin: 1rem auto;
 }
-.article2{
+
+.article2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -45,14 +55,17 @@ body
   margin: 1rem auto;
   margin-top: 1rem;
 }
-.precaution{
-  width:100%;
+
+.precaution {
+  width: 100%;
 }
-p{
+
+p {
   text-align: center;
   min-width: 100%;
   padding: 1rem;
 }
-h2{
+
+h2 {
   text-align: center;
 }
