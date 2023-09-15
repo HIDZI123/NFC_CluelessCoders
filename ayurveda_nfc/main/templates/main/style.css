@@ -10,8 +10,17 @@ html
     font-family: "Poppins",sans-serif;
     scroll-behavior: smooth;
 }
-
-
+body
+{
+    background-image: url("images/Bg_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #464646;
+    backface-visibility: 70%;
+    z-index: 1;
+}
 .header__nav{
     margin: 0%;
     background-color: #25fcb4;
@@ -103,15 +112,14 @@ html
   /*main*/
   .main{
     margin-top: 2rem;
-    background-color:white;
+    background-color:transparent;
     align-items: center;
   }
 /* MAin image*/
 .main__img
   {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-left:25%;
+  
+    margin-left:20%;
     border-radius: 5%;
   }
 
@@ -169,7 +177,5 @@ section{
     color:#1f7c07
 }
 
-.li2
-{
 
-}
+
