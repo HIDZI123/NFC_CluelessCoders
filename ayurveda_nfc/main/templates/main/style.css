@@ -51,9 +51,10 @@
 }
 /*Search bar */
 .search{
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
+    background: #79f498;
     justify-content: space-between;
   }
   .search input{
@@ -72,19 +73,23 @@
   .search button{
     border :0;
     outline: 10;
-    background: #ebfffc;
+    background: #79f498;
     border-radius: 50px;
-    width: 60px;
-    height: 60px;
+    width: fit-content;
+    height: fit-content;
     cursor: pointer;
   }
   .search button img{
     width: 18px;
   } 
-  
+  /*main*/
+  .main{
+    background-color: #79f498;
+  }
 /* MAin image*/
 .main__img
   {
+    align-items: baseline;
     margin-left:25%;
     border-radius: 5%;
   }
