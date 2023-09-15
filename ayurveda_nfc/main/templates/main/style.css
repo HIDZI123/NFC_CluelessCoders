@@ -49,6 +49,7 @@
     justify-content: center;
     justify-content: space-evenly;
 }
+/*Search bar */
 .search{
     width: 100%;
     display: flex;
@@ -81,3 +82,9 @@
     width: 18px;
   } 
   
+/* MAin image*/
+.main__img
+  {
+    margin-left:25%;
+    border-radius: 5%;
+  }
