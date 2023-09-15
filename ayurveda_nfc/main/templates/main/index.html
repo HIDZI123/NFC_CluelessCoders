@@ -58,21 +58,15 @@
         Body parts
         </h2>
         <ul>
+            {%for bodypart in parts%}
+
             <li class="li2">
-                <a href="" class="a__2">Eyes</a>
+                <a href="{% url 'body_part' bodypart.id %}" class="a__2"> {{bodypart.name}}
+                </a>
             </li>
-            <li class="li2">
-                <a href="" class="a__2">Nose</a>
-            </li>
-            <li class="li2">
-                 <a href="" class="a__2">Toungue</a>
-            </li>
-            <li class="li2">
-                <a href="" class="a__2">Ears</a>
-            </li>
-            <li class="li2">
-                <a href="" class="a__2">Skin</a>
-            </li>
+            {%endfor%}
+    
+            <li>
         </ul>
     </div>
     </section>

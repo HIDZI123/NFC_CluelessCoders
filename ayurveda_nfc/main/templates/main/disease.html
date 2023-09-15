@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease</title>
+</head>
+<body>
+
+    <h1>{{disease.name}}</h1>
+    <h3>{{disease.description}}</h3>
+    <h2>{{disease.drug}}<br></h2>
+    {{disease.drug.description}}<br>
+    <h2>{{disease.ayurveda}}<br></h2>
+    {{disease.ayurveda.description}}<br>
+    <h1>{{diseases.name}}</h1>    <br>
+
+    
+    <a href="{%url 'home'%}">Home</a>
+    
+
+</body>
+</html>
