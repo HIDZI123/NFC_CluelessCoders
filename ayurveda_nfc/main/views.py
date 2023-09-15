@@ -34,3 +34,4 @@ def bodypart(request,part_id):
 
     return render(request,"main/bodyparts.html",
     {"parts":part,"diseases":disease,})
+

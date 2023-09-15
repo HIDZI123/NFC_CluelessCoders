@@ -18,10 +18,11 @@
             <img src="{%static 'main/search.png'%}">Search Results:-
         </figure>
     </h1>
-        <ul>
+    {% for disease in diseases %}
 
-        {% for disease in diseases %}
-            <li>
+        <ul class="ul">
+
+            <li class = "li">
                 <a href="{% url 'disease' disease.id %}">
                     {{ disease.name }}
                 </a> - {{ disease.description }}
