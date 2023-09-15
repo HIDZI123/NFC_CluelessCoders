@@ -4,10 +4,7 @@ from .forms import *
 
 # Create your views here.
 def home(request):
-    return render(request,"main/index.html",
-    {
-        "parts":Part.objects.all(),
-    })
+    return render(request,"main/index.html")
 
 def disease_search(request):
     if request.method == 'POST':
@@ -15,7 +12,7 @@ def disease_search(request):
 
     else:
         searched=''
-        
+
     diseases = Disease.objects.filter(name__contains=searched)
 
     return render(request, 'main/disease_search.html', 

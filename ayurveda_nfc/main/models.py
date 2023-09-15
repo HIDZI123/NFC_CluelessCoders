@@ -21,20 +21,28 @@ class Drug(models.Model):
 
 class Disease(models.Model):
     name = models.CharField(max_length=100)
-    description = models.TextField()
-    drug = models.ForeignKey("Drug", on_delete=models.CASCADE)
-    ayurveda = models.ForeignKey("Ayurveda", on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    symptoms = models.TextField()
+    causes = models.TextField()
+    prevention = models.TextField()
+    remedies=models.TextField()
+    drug=models.ForeignKey('Drug',on_delete=models.CASCADE)
+    clinic = models.URLField(max_length=200,blank=True)
 
     def __str__(self):
         return self.name    
 
+    def formatted_symptoms(self):
+        return self.format_text_field(self.symptoms)
 
+    def formatted_causes(self):
+        return self.format_text_field(self.causes)
 
-class Part(models.Model):
-    name=models.CharField(max_length=100)
-    disease=models.ManyToManyField(Disease,blank=True,related_name='part')
+    def formatted_prevention(self):
+        return self.format_text_field(self.prevention)
 
-    
-    def __str__(self):
-        return self.name    
+    def formatted_remedies(self):
+        return self.format_text_field(self.remedies)
+
+    def format_text_field(self, field_text):
+        return field_text.split('\n')
+

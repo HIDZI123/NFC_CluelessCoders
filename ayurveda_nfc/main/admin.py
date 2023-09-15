@@ -4,4 +4,3 @@ from .models import *
 admin.site.register(Drug)
 admin.site.register(Ayurveda)
 admin.site.register(Disease)
-admin.site.register(Part)
