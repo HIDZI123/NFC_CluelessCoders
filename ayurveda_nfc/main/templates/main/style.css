@@ -89,7 +89,6 @@
 /* MAin image*/
 .main__img
   {
-    align-items: baseline;
     margin-left:25%;
     border-radius: 5%;
   }
