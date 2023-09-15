@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+*,*::after,*::before
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: "Poppins",sans-serif;
+    scroll-behavior: smooth;
+}
+.header__nav{
+    margin: 0%;
+    background-color: #25fcb4;
+    height: 50px;
+    max-width: 100%;
+    
+}
+.header__h1
+{
+    border: 1px solid #09f505;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    background-color: rgb(118, 236, 89);
+}
+.header__ul
+{
+    list-style: none;
+}
+.header__a
+{
+    color:aliceblue;
+    text-decoration: none;
+}
+.ayu{
+   min-height: fit-content;
+    align-items: start;
+}
+.ayu-item{
+    height: 40px;
+    width: 40px;
+
+}
+.ayu-text{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.header__ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/*Search bar */
+.search{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+  }
+  .search input{
+    border :1px solid #000;
+    outline: 10;
+    background: #e1ffe9;
+    color: #555;
+    padding: 10px 25px;
+    height: 30px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    text-align:left;
+  }
+  .search button{
+    border :1px solid #000;
+    border :0;
+    outline: 10;
+    background: transparent;
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+  .search button img{
+  
+    width: 18px;
+  } 
+
+  .li1
+  {
+    padding: 1rem;
+  }
+
+  /*main*/
+  .main{
+    margin-top: 2rem;
+    background-color:white;
+    align-items: center;
+  }
+/* MAin image*/
+.main__img
+  {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-left:25%;
+    border-radius: 5%;
+  }
+
+
+/* sectioning the content */
+.article
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    word-wrap: balance;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.section1
+{
+    margin-left:40px;
+}
+.section2
+{
+    width:75%;
+
+}
+.div1
+{
+    
+    margin: 2rem;
+    
+    width: 75%;
+    align-items:end;
+    font-size: 1rem;
+}
+.div2
+{
+    display: flex ;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 5rem;
+    min-height: 30vh;
+    width: 100%;
+   
+    padding: 2rem;
+    font-size: 2rem;
+    /* size: 50%; */
+}
+.a__2
+{
+    text-decoration: none;
+    color:#1f7c07
+}
+
+.li2
+{
+
+}
