@@ -25,7 +25,9 @@ def disease(request,disease_id):
 
 
     return render(request,"main/disease.html",
-    {"disease":disease})
+    {"disease":disease,
+        'title': disease.name,
+    })
 
 
 def bodypart(request,part_id):

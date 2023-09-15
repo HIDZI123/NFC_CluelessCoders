@@ -10,22 +10,26 @@
     <link rel="stylesheet"  type="text/css" href="{%static 'main/search.css'%}">
     <link rel="icon" href="{%static 'main/icon.png'%}">
     <title>SearchPanel</title>
+    
 </head>
 <body>
 
     <h1>
         <figure>
-            <img src="{%static 'main/search.png'%}">Search Results:-
+            <img src="{%static 'main/search.png'%}">Search Results
         </figure>
     </h1>
+    <section>
+
     {% for disease in diseases %}
 
-        <ul class="ul">
+        <ul>
 
-            <li class = "li">
-                <a href="{% url 'disease' disease.id %}">
+            <li>
+                <h2><a href="{% url 'disease' disease.id %}">
                     {{ disease.name }}
-                </a> - {{ disease.description }}
+                </a></h2>
+                 <p> {{ disease.description }}</p>
             </li>
         {% empty %}
             <li>No diseases found.</li>

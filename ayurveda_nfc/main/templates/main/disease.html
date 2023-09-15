@@ -2,68 +2,78 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sample</title>
+
+    
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Movies</title>
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="{%static 'main/styl.css'%}">
 </head>
+
 <body>
+
     <header class="disease_name">
         <h1>{{disease.name}}</h1>
     </header>
     <div class="card">
-    <article class="article1">
-        <section class="section1">
-        <div class="symtoms">
-            <h2>Symptoms:</h2>
-            <ul>
-                {% for symptom in disease.formatted_symptoms %}
-                    <li>{{ symptom }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        </section>
-    <section class="section2">
-        <div class="causes">
-            <h2>Types and Causes:</h2>
-            <ul>
-                {% for cause in disease.formatted_causes %}
-                    <li>{{ cause }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    </section>
-    <!-- <section class="section3">
+        <article class="article1">
+            <section class="section1">
+                <div class="symtoms">
+                    <h2>Symptoms:</h2>
+                    <ul>
+                        {% for symptom in disease.formatted_symptoms %}
+                        <li>{{ symptom }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="causes">
+                    <h2>Types and Causes:</h2>
+                    <ul>
+                        {% for cause in disease.formatted_causes %}
+                        <li>{{ cause }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <!-- <section class="section3">
         <div class="types">
             <h2>Types</h2>
             <p>heloo</p>
         </div>
     </section> -->
-</article>
+        </article>
 
-<article class="article2">
-    <section class="section4">
-    <div class="precaution">
-        <h2>Prevention:</h2>
-        <ul>
-            {% for prevention in disease.formatted_prevention %}
-                <li>{{ prevention }}</li>
-            {% endfor %}
-        </ul>
+        <article class="article2">
+            <section class="section4">
+                <div class="precaution">
+                    <h2>Prevention:</h2>
+                    <ul>
+                        {% for prevention in disease.formatted_prevention %}
+                        <li>{{ prevention }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <section class="section5">
+                <div class="ayurved">
+                    <h2>Remedies:</h2>
+                    <ul>
+                        {% for remedy in disease.formatted_remedies %}
+                        <li>{{ remedy }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+        </article>
     </div>
-    </section>
-<section class="section5">
-    <div class="ayurved">
-        <h2>Remedies:</h2>
-        <ul>
-            {% for remedy in disease.formatted_remedies %}
-                <li>{{ remedy }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-</section>
-</article>
-</div>
 </body>
+
 </html>
