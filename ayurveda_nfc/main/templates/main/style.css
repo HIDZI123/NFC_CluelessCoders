@@ -5,11 +5,15 @@
     padding:0;
     box-sizing: border-box;
 }
+html
+{
+    font-family: "Poppins",sans-serif;
+    scroll-behavior: smooth;
+}
 .header__nav{
     margin: 0%;
-    padding: 0%;
     background-color: #25fcb4;
-    height: 40px;
+    height: 50px;
     max-width: 100%;
     
 }
@@ -20,6 +24,10 @@
     padding: 1rem;
     margin-bottom: 0rem;
     background-color: rgb(118, 236, 89);
+}
+.header__ul
+{
+    list-style: none;
 }
 .header__a
 {
@@ -85,8 +93,14 @@
     width: 18px;
   } 
 
+  .li1
+  {
+    padding: 1rem;
+  }
+
   /*main*/
   .main{
+    margin-top: 2rem;
     background-color:white;
     align-items: center;
   }
@@ -100,5 +114,60 @@
   }
 
 
+/* sectioning the content */
+.article
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    word-wrap: balance;
+}
 
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.section1
+{
+    margin-left:40px;
+}
+.section2
+{
+    width:75%;
 
+}
+.div1
+{
+    
+    margin: 2rem;
+    
+    width: 75%;
+    align-items:end;
+    font-size: 1rem;
+}
+.div2
+{
+    display: flex ;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 5rem;
+    min-height: 30vh;
+    width: 100%;
+   
+    padding: 2rem;
+    font-size: 2rem;
+    /* size: 50%; */
+}
+.a__2
+{
+    text-decoration: none;
+    color:#1f7c07
+}
+
+.li2
+{
+
+}
