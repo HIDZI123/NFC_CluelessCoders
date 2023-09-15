@@ -138,12 +138,12 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: end;
+    margin-left: 5rem;
 }
-.section1
+/* .section1
 {
     margin-left:40px;
-}
+} */
 .section2
 {
     width:75%;
@@ -151,10 +151,10 @@ section{
 }
 .div1
 {
+    margin :2rem;
+    margin-left: 5rem;
     
-    margin: 2rem;
-    
-    width: 75%;
+    width: 60%;
     align-items:end;
     font-size: 1rem;
 }
