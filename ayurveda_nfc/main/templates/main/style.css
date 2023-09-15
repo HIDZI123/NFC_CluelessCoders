@@ -13,7 +13,7 @@ html
 .header__nav{
     margin: 0%;
     background-color: #25fcb4;
-    height: 40px;
+    height: 50px;
     max-width: 100%;
     
 }
@@ -24,6 +24,10 @@ html
     padding: 1rem;
     margin-bottom: 0rem;
     background-color: rgb(118, 236, 89);
+}
+.header__ul
+{
+    list-style: none;
 }
 .header__a
 {
@@ -165,5 +169,5 @@ section{
 
 .li2
 {
-    
+
 }
