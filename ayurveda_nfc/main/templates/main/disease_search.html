@@ -1,0 +1,29 @@
+<!-- disease_search.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Search Results</title>
+</head>
+<body>
+    <h1>Disease Search</h1>
+    <form method="post" action="{% url 'disease_search' %}">
+        {% csrf_token %}
+        <input type="text" placeholder="Search" spellcheck="false"  name = 'searched'>
+        <input type="submit" value="Search">
+    </form>
+    
+    <h2>Search Results</h2>
+    <ul>
+        {% for disease in diseases %}
+            <li>
+                <a href="{% url 'disease' disease.id %}">
+                    {{ disease.name }}
+                </a> - {{ disease.description }}
+            </li>
+        {% empty %}
+            <li>No diseases found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

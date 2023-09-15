@@ -34,8 +34,11 @@
                 </li>
                 
                 <div class="search">
-                    <input type="text" placeholder="Search" spellcheck="false">
-                    <button class="button"><img src="{%static 'main/search.png'%}"></button>
+                    <form method="post" action = "{% url 'disease_search' %}">
+                        {% csrf_token %}
+                    <input type="text" placeholder="Search" spellcheck="false"  name = 'searched'>
+                    <button class="button" ><a href="{% url 'disease_search' %}"><img src="{%static 'main/search.png'%}"></a></button>
+                    </form>
                   </div>
 
                 
@@ -88,6 +91,7 @@
     </div>
     </section>
 </article>
+<a href="{% url 'disease_search' %}"> abchdnfkasnk</a>
 
 </main>
 </body>

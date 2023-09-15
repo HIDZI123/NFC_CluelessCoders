@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import *
+from .forms import *
 
 # Create your views here.
 def home(request):
@@ -8,11 +9,24 @@ def home(request):
         "parts":Part.objects.all(),
     })
 
+def disease_search(request):
+    if request.method == 'POST':
+        searched=request.POST['searched']   
+
+    else:
+        searched=''
+        
+    diseases = Disease.objects.filter(name__contains=searched)
+
+    return render(request, 'main/disease_search.html', 
+        {'searched':searched,
+        'diseases': diseases})
+
 
 def disease(request,disease_id):
     disease=Disease.objects.get(id=disease_id)
     part=disease.part.all()
-    
+
 
     return render(request,"main/disease.html",
     {"disease":disease,"parts":part})
