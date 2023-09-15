@@ -5,26 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>ayurveda</title>
-    <link rel="stylesheet" type="text/css" href="{%static 'main/style.css'%}">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
 </head>
 
 <body>
     <header class="header"> 
         
         <h1  class="header__h1">
-            <img src="{%static 'main/ayurveda_3063202.png'%}" class="ayu-item">
-           <a href="/" class="header__a">AYURVEDA</a>
+            <img src="images/ayurveda.png" class="ayu-item">
+        AYURVEDA
         </h1>
   <!-- nav bar -->
         <nav class="header__nav">
             <ul class="header__ul">
                 <li class="li1">
-                    <a href="#about"> &#128222;</a>Contact us
+                    <a href="#about">&#128222;Contact us</a>
                 </li>
                 <li class="li1">
-                    <a href="#about">&#9993; </a>Our E-Mail
+                    <a href="#about">&#9993;Our E-Mail</a>
                 </li>
                 <li class="li1">
                     <a href="#about">About</a>
@@ -49,16 +50,15 @@
     
 
     <main class="main">
-        <!-- adding image -->
+        
         <figure class="main__fig">
             <img src="{%static 'main/img_1_bg.png'%}" alt="Background Image" width="858" height="515" class="main__img" id="img__1">
         </figure>
-
     <article class="article">  
     <section class="Section1">
-        <div class="div2">
-        <!-- <h2> -->
-        <!-- Body parts
+        <!-- <div class="div2">
+        <h2>
+        Body parts
         </h2>
         <ul>
             {%for bodypart in parts%}
@@ -67,11 +67,23 @@
                 <a href="{% url 'body_part' bodypart.id %}" class="a__2"> {{bodypart.name}}
                 </a>
             </li>
-            {%endfor%} -->
-    
-            <li>
+            <li class="li2">
+                <a href="" class="a__2">Nose</a>
+            </li>
+            <li class="li2">
+                 <a href="" class="a__2">Tongue</a>
+            </li>
+            <li class="li2">
+                <a href="" class="a__2">Ears</a>
+            </li>
+            <li class="li2">
+                <a href="" class="a__2">Skin</a>
+            </li>
+            <li class="li2">
+                <a href="" class="a__2">Bones</a>
+           </li>
         </ul>
-    </div>
+    </div> -->
     </section>
 
     <section class="section2">
@@ -91,9 +103,13 @@
     </div>
     </section>
 </article>
-<a href="{% url 'disease_search' %}"> abchdnfkasnk</a>
-
 </main>
+    <footer>
+        &copy;CluelessCoders
+        <p id="end">
+            For hackathon, 'Need for code 2.0'
+        </p>
+    </footer>
 </body>
 
 </html>
