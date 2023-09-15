@@ -23,7 +23,7 @@
     color:aliceblue;
     text-decoration: none;
 }
-for 
+/* for header  */
 .header__ul
 {
     display: flex;
@@ -63,3 +63,8 @@ for
     width: 18px;
   } 
   
+
+  .main__img
+  {
+    margin: auto auto;
+  }
