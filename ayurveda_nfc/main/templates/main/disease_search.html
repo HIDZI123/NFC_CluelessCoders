@@ -1,20 +1,25 @@
 <!-- disease_search.html -->
+{% load static %}
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Disease Search Results</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mustafa">
+    <link rel="stylesheet"  type="text/css" href="{%static 'main/search.css'%}">
+    <link rel="icon" href="{%static 'main/icon.png'%}">
+    <title>SearchPanel</title>
 </head>
 <body>
-    <!-- <h1>Disease Search</h1>
-    <form method="post" action="{% url 'disease_search' %}">
-        {% csrf_token %}
-        <input type="text" placeholder="Search" spellcheck="false"  name = 'searched'>
-        <input type="submit" value="Search">
-    </form>
-     -->
-    <h2>Search Results</h2>
-    <ul>
+
+    <h1>
+        <figure>
+            <img src="{%static 'main/search.png'%}">Search Results:-
+        </figure>
+    </h1>
+        <ul>
+
         {% for disease in diseases %}
             <li>
                 <a href="{% url 'disease' disease.id %}">
@@ -24,6 +29,7 @@
         {% empty %}
             <li>No diseases found.</li>
         {% endfor %}
+
     </ul>
 </body>
 </html>
