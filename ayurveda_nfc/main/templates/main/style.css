@@ -167,7 +167,14 @@ section{
     color:#1f7c07
 }
 
-.li2
+/*Background image for the whole page*/
+body
 {
-
+    background-image: url("images/Bg_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #464646;
+    z-index: 1;
 }
