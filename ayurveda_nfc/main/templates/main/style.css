@@ -54,17 +54,13 @@ p
     padding: 1rem;
     margin-bottom: 0rem;
     background-color: #007f5f;
+    font-size: 43px;
    
 }
 .header__ul
 {
     list-style: none;
    
-}
-.header__a
-{
-    color:aliceblue;
-    text-decoration: none;
 }
 .ayu{
    min-height: fit-content;
@@ -73,6 +69,7 @@ p
 .ayu-item{
     height: 40px;
     width: 40px;
+
 
 }
 .ayu-text{
