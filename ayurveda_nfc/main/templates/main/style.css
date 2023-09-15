@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
 *,*::after,*::before
 {
+    box-sizing: border-box;
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
 html
 {
@@ -12,28 +12,28 @@ html
 }
 body
 {
-    background-image: url("images/Bg_img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    backface-visibility: 70%;
     background-attachment: fixed;
     background-color: #464646;
-    backface-visibility: 70%;
+    background-image: url("images/Bg_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-weight: 800;
 }
 
 header
 {
+    color:#d0caca;
     position: sticky;
     top: 0;
     z-index: 1;
-    color:#d0caca
 }
 h2
 {
     font-weight: 800;
-    padding: 1rem;
     margin: 1rem;
+    padding: 1rem;
 }
 p
 {
@@ -41,20 +41,20 @@ p
 }
 
 .header__nav{
-    margin: 0%;
     background-color: #efef20c2;
     height: 50px;
+    margin: 0%;
     max-width: 100%;
     
 }
 .header__h1
 {
-    border: 1px solid #09f505;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 0rem;
     background-color: #007f5f;
+    border: 1px solid #09f505;
     font-size: 43px;
+    margin-bottom: 0rem;
+    padding: 1rem;
+    text-align: center;
    
 }
 .header__ul
@@ -63,8 +63,8 @@ p
    
 }
 .ayu{
-   min-height: fit-content;
     align-items: start;
+    min-height: fit-content;
 }
 .ayu-item{
     height: 40px;
@@ -88,34 +88,34 @@ p
 }
 /*Search bar */
 .search{
-    width: fit-content;
-    display: flex;
     align-items: center;
     background: transparent;
+    display: flex;
     justify-content: space-between;
+    width: fit-content;
   }
   .search input{
-    border :1px solid #000;
-    outline: 10;
     background: #e1ffe9;
-    color: #555;
-    padding: 10px 25px;
-    height: 30px;
+    border :1px solid #000;
     border-radius: 30px;
+    color: #555;
     flex: 1;
-    margin-right: 16px;
     font-size: 18px;
+    height: 30px;
+    margin-right: 16px;
+    outline: 10;
+    padding: 10px 25px;
     text-align:left;
   }
   .search button{
-    border :1px solid #000;
-    border :0;
-    outline: 10;
     background: transparent;
+    border :0;
+    border :1px solid #000;
     border-radius: 50px;
-    width: fit-content;
-    height: fit-content;
     cursor: pointer;
+    height: fit-content;
+    outline: 10;
+    width: fit-content;
   }
   .search button img{
   
@@ -129,15 +129,15 @@ p
 
   /*main*/
   .main{
-    margin-top: 2rem;
-    background-color:transparent;
     align-items: center;
+    background-color:transparent;
+    margin-top: 2rem;
   }
 /* MAin image*/
 .main__img
   {
-    margin-left:20%;
     border-radius: 5%;
+    margin-left:20%;
   }
 
 
@@ -146,8 +146,8 @@ p
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     justify-content: flex-end;
+    justify-content: space-evenly;
     word-wrap: balance;
 }
 
@@ -168,29 +168,28 @@ section{
 }
 .div1
 {
-    margin :2rem;
-    margin-left: 5rem;
-    
-    width: 60%;
     align-items:end;
     font-size: 1rem;
+    margin :2rem;
+    margin-left: 5rem;
+    width: 60%;
 }
 .div2
 {
+    /* size: 50%; */
     display: flex ;
-    justify-content: space-evenly;
     flex-direction: column;
+    font-size: 2rem;
+    justify-content: space-evenly;
     margin-left: 5rem;
     min-height: 30vh;
-    width: 100%;
     padding: 2rem;
-    font-size: 2rem;
-    /* size: 50%; */
+    width: 100%;
 }
 .a__2
 {
+    color:#1f7c07;
     text-decoration: none;
-    color:#1f7c07
 }
 
 a:visited
@@ -206,9 +205,9 @@ a:hover,a:active
 
 a
 {
+    color:#30372fda;
     font:inherit;
     text-decoration: none;
-    color:#30372fda
 
 }
 
