@@ -23,15 +23,40 @@ body {
   backface-visibility: 70%;
   z-index: 1;
 }
-.card {
-  width: 100%;
-  border: 100px solid #000000;
-  background-color: #12ebe000;
-  z-index: 1;
+header
+{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color:#d0caca;
+    margin-top: 0px;
 }
-.disease_name {
+.header__h1
+{
+    border: 1px solid #09f505;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    background-color: #007f5f;
+    font-size: 45px;
+   
+}
+.ayu-item{
+  height: 40px;
+  width: 40px;
+}
+.card{
+  border: 1px solid #000;
+ height: auto;
+ width: fit-content;
+  border-radius: 5%;
+  background-color: transparent;
+cursor: pointer;
+}
+.disease_name{
   text-align: center;
   padding: 1rem;
+  color: #000;
   margin-bottom: 0rem;
 }
 
@@ -43,9 +68,17 @@ body {
   word-wrap: balance;
   width: 100%;
   margin: 1rem auto;
+  background-color: transparent;
+  
+}
+.card:hover{
+  background-color: transparent;
+  box-shadow: 0 0 10px #000;
+  
 }
 
-.article2 {
+
+.article2{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
