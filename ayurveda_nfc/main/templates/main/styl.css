@@ -21,6 +21,28 @@ body
     backface-visibility: 70%;
     z-index: 1;
 }
+header
+{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color:#d0caca;
+    margin-top: 0px;
+}
+.header__h1
+{
+    border: 1px solid #09f505;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    background-color: #007f5f;
+    font-size: 43px;
+   
+}
+.ayu-item{
+  height: 40px;
+  width: 40px;
+}
 .card{
   border: 1px solid #000;
  height: auto;
@@ -32,6 +54,7 @@ cursor: pointer;
 .disease_name{
   text-align: center;
   padding: 1rem;
+  color: #000;
   margin-bottom: 0rem;
 }
 .article1{
